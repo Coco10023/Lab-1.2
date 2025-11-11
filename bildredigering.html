@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<main class="container flow">
+<h1>Redigerade bilder med original</h1>
+
+
+<!-- Exempel 1: Borttaget objekt (krav) -->
+<article class="edit-block flow">
+<h2>Bild 1 – Borttaget objekt</h2>
+<div class="compare">
+<figure>
+<img src="assets/series/original/bildserie001.jpeg" alt="Original, bild 1" />
+<figcaption>Original</figcaption>
+</figure>
+<figure>
+<img src="assets/series/bildserie001.jpeg" alt="Redigerad, bild 1" />
+<figcaption>Redigerad</figcaption>
+</figure>
+</div>
+<p>
+<strong>Vad jag gjort:</strong> Tog bort oönskat objekt (t.ex. en soptunna) med
+Innehållsanpassad fyllning/Klona. Justerade vitbalans, ökade kontrast och
+tonkurva för en jämn look. Lätt beskärning till 3:2.
+</p>
+</article>
+
+
+<!-- Exempel 2: Färgläggning/byte av färg (krav) -->
+<article class="edit-block flow">
+<h2>Bild 2 – Färgläggning / Bytt färg</h2>
+<div class="compare slider" data-divider="0.5">
+<img src="assets/series/original/bildserie002.jpeg" alt="Original, bild 2" class="slider__img slider__img--left" />
+<img src="assets/series/bildserie002.jpeg" alt="Redigerad, bild 2" class="slider__img slider__img--right" />
+<input class="slider__input" type="range" min="0" max="100" value="50" aria-label="Dra för att jämföra före/efter" />
+</div>
+<p>
+<strong>Vad jag gjort:</strong> Maskade tröjan och bytte färg från blå till röd
+via HSL/Selektiv färg. Finjusterade mättnad och skuggor. Matchade serien med
+en varm toning (LUT/Color Balance) och enhetlig korn.
+</p>
+</article>
+
+
+<!-- Exempel 3: Ljusbalans/färgkorrigering -->
+<article class="edit-block flow">
+<h2>Bild 3 – Ljus & färg</h2>
+<div class="compare">
+<figure>
+<img src="assets/series/original/bildserie003.jpeg" alt="Original, bild 3" />
+<figcaption>Original</figcaption>
+</figure>
+<figure>
+<img src="assets/series/bildserie003.jpeg" alt="Redigerad, bild 3" />
+<figcaption>Redigerad</figcaption>
+</figure>
+</div>
+<p>
+<strong>Vad jag gjort:</strong> Exponering +0.25, skuggor upp, högdagrar ner, vitbalans
+mot neutral grå. Lätt vinjettering och beskärning. Samma färgprofil som övriga bilder.
+</p>
+
+
+<p class="note">Tips: Max en bild får vara svartvit. Om du väljer det, färglägg ett objekt i bilden.</p>
+</article>
+</main>
+
+
+<footer class="site-footer">
+<p>© <span id="year"></span> Ditt Namn</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

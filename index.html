@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Bildwebb</title>
+
+
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preload" as="image" href="assets/header.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Startsida">
+<img src="assets/logo.svg" alt="Logotyp" width="120" height="40" />
+</a>
+
+<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Öppna meny">☰</button>
+
+<nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
+<a href="index.html" aria-current="page">Start</a>
+<a href="bildredigering.html">Bildredigering</a>
+<a href="om-mig.html">Om mig</a>
+</nav>
+</header>
+
+
+<section class="hero" role="banner" aria-label="Hero-bild">
+<div class="hero__overlay"></div>
+<div class="hero__content">
+<h1>Min bildserie</h1>
+<p>En enhetlig serie med justerad ljusbalans, färg och komposition.</p>
+</div>
+</section>
+
+
+<main class="container flow">
+<section aria-labelledby="intro-title" class="flow">
+<h2 id="intro-title">Om uppgiften</h2>
+
+<p>
+Den här webbplatsen är skapad för Laboration 1.2. Jag har redigerat en bildserie
+så att bilderna följer samma grafiska profil och presenteras i en responsiv layout.
+</p>
+
+<p>
+Använda program: <strong>Adobe Photoshop</strong> och <strong>Lightroom</strong> (ange dina faktiska verktyg).
+</p>
+</section>
+
+
+<section aria-labelledby="gallery-title" class="flow">
+<h2 id="gallery-title">Bildserie</h2>
+<div class="gallery-grid" role="list">
+
+<!-- Byt ut src/alt mot dina faktiska bilder och texter -->
+<figure role="listitem" class="card">
+<img src="assets/series/bildserie001.jpeg" alt="Beskrivning av bild 1" loading="lazy" />
+<figcaption>bildserie001.jpeg</figcaption>
+</figure>
+
+<figure role="listitem" class="card">
+<img src="assets/series/bildserie002.jpeg" alt="Beskrivning av bild 2" loading="lazy" />
+<figcaption>bildserie002.jpeg</figcaption>
+</figure>
+
+<figure role="listitem" class="card">
+<img src="assets/series/bildserie003.jpeg" alt="Beskrivning av bild 3" loading="lazy" />
+<figcaption>bildserie003.jpeg</figcaption>
+</figure>
+
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>© <span id="year"></span> Francisco Mauricio De Leon</p>
+</footer>
+
+</body>
+</html>

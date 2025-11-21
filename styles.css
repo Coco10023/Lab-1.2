@@ -1,0 +1,86 @@
+:root {
+--bg: #0b0c10;
+--surface: #11131a;
+--text: #e6e6e6;
+--muted: #b8b8b8;
+--accent: #71c7ec; /* mild cyan för en kall, enhetlig profil */
+--radius: 1.25rem;
+--space: clamp(0.75rem, 1.2vw, 1.25rem);
+--maxw: 1150px;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial, sans-ser
+}
+
+
+/* Responsiv Webbdesign */
+
+/* Layout för Mobil (Upp till 767px)*/
+@media (max-width: 767px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pizza img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pizza-marinara {
+        margin-top: 75px;
+    }
+}
+
+/* Layout för Surfplatta (768-1024px) */
+@media (min-width: 768px) and (max-width:1024px) {
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+/* Layout för Desktop (Över 1025px) */
+@media (min-width: 1025px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+}

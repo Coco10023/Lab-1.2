@@ -1,77 +1,100 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv"> <!-- Anger att sidan är på svenska-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Bildwebb</title>
-
-
-
-    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="preload" as="image" href="assets/header.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8"> <!-- Stöd för svenska tecken -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör sidan responsiv för mobila enheter-->
+    <title>Uppgift 1.2</title> <!-- Sidtitel -->
+    <link rel = "stylesheet" href = "styles.css"> <!-- Länkar till min CSS-fil -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes = "16x16">
+    <img src = "Assets/logo.jpg" alt = "logo" width = "40" height="45">
+    <meta name = "description" content = "Startsida">
 </head>
 
 <body>
-<header class="site-header">
-<a class="brand" href="index.html" aria-label="Startsida">
-<img src="assets/logo.svg" alt="Logotyp" width="120" height="40" />
-</a>
 
-<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Öppna meny">☰</button>
+    <nav aria-label = "Huvudmeny">
+        <ul>
+            <li><a href = "index.html">Startsida</a></li>
+            <li><a href = "bildredigering.html">Bildredigering</a></li>
+            <li><a href = "om-mig.html">Om mig</a></li>
+        </ul>
+    </nav>
 
-<nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
-<a href="index.html" aria-current="page">Start</a>
-<a href="bildredigering.html">Bildredigering</a>
-<a href="om-mig.html">Om mig</a>
-</nav>
-</header>
-
-
-<section class="hero" role="banner" aria-label="Hero-bild">
-<div class="hero__overlay"></div>
-<div class="hero__content">
-<h1>Min bildserie</h1>
-<p>En enhetlig serie med justerad ljusbalans, färg och komposition.</p>
-</div>
-</section>
-
-
-<main class="container flow">
-<section aria-labelledby="intro-title" class="flow">
-<h2 id="intro-title">Om uppgiften</h2>
-
+<section class="intro">
+<h2>Om Uppgiften</h2>
 <p>
-Den här webbplatsen är skapad för Laboration 1.2. Jag har redigerat en bildserie
-så att bilderna följer samma grafiska profil och presenteras i en responsiv layout.
-</p>
-
-<p>
-Använda program: <strong>Adobe Photoshop</strong> och <strong>Lightroom</strong> (ange dina faktiska verktyg).
+Den här webbplatsen visar min bildserie samt några av mina redigerade bilder.
+Jag har arbetat med bildbehandling i <strong>Adobe Photoshop</strong> och
+<strong>Photopea</strong>. Webbplatsen är byggd med <em>HTML5</em> och
+<em>CSS</em>, och är responsiv för mobil, surfplatta och dator.
 </p>
 </section>
 
 
-<section aria-labelledby="gallery-title" class="flow">
-<h2 id="gallery-title">Bildserie</h2>
-<div class="gallery-grid" role="list">
+<section class="grid-gallery" aria-label="Bildserie">
+<h2>Bildserie</h2>
 
-<!-- Byt ut src/alt mot dina faktiska bilder och texter -->
-<figure role="listitem" class="card">
-<img src="assets/series/bildserie001.jpeg" alt="Beskrivning av bild 1" loading="lazy" />
-<figcaption>bildserie001.jpeg</figcaption>
+<div class="grid">
+
+<figure class="card">
+<img src="Assets/Bilder/bilserie001.jpg" alt="Bild 1 i serien" width = "140" height="120">
+<figcaption>Bild 1</figcaption>
 </figure>
 
-<figure role="listitem" class="card">
-<img src="assets/series/bildserie002.jpeg" alt="Beskrivning av bild 2" loading="lazy" />
-<figcaption>bildserie002.jpeg</figcaption>
+<figure class="card">
+<img src="Assets/Bilder/bilserie002.jpg" alt="Bild 2 i serien" width = "140" height="120">
+<figcaption>Bild 2</figcaption>
 </figure>
 
-<figure role="listitem" class="card">
-<img src="assets/series/bildserie003.jpeg" alt="Beskrivning av bild 3" loading="lazy" />
-<figcaption>bildserie003.jpeg</figcaption>
+<figure class="card">
+<img src="Assets/Bilder/bilserie003.jpg" alt= "Bild 3 i serien" width = "140" height="120">
+<figcaption>Bild 3</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie004.jpg" alt = "Bild 4 i serien" width = "140" height="!20">
+<figcaption>Bild 4</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie005.jpg" alt = "Bild 5 i serien" width = "140" height="!20">
+<figcaption>Bild 5</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie006.jpg" alt = "Bild 6 i serien" width = "140" height="!20">
+<figcaption>Bild 6</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie007.jpg" alt = "Bild 7 i serien" width = "140" height="!20">
+<figcaption>Bild 7</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie008.jpg" alt = "Bild 8 i serien" width = "140" height="!20">
+<figcaption>Bild 8</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie009.jpg" alt = "Bild 9 i serien" width = "140" height="!20">
+<figcaption>Bild 9</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie010.jpg" alt = "Bild 10 i serien" width = "140" height="!20">
+<figcaption>Bild 10</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie011.jpg" alt = "Bild 11 i serien" width = "140" height="!20">
+<figcaption>Bild 11</figcaption>
+</figure>
+
+<figure class = "card">
+<img src = "Assets/Bilder/bilserie012.jpg" alt = "Bild 12 i serien" width = "140" height="!20">
+<figcaption>Bild 12</figcaption>
 </figure>
 
 </div>
@@ -80,7 +103,9 @@ Använda program: <strong>Adobe Photoshop</strong> och <strong>Lightroom</strong
 
 
 <footer class="site-footer">
-<p>© <span id="year"></span> Francisco Mauricio De Leon</p>
+<div class="container">
+<p>&copy; <span id="year"></span> Min Bildwebb.</p>
+</div>
 </footer>
 
 </body>

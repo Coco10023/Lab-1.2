@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> <!-- Stöd för svenska tecken -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör sidan responsiv för mobila enheter-->
+    <title>Uppgift 1.2</title> <!-- Sidtitel -->
+    <link rel = "stylesheet" href = "styles.css"> <!-- Länkar till min CSS-fil -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes = "16x16">
+    <img src = "Assets/logo.jpg" alt = "logo" width = "40" height="45">
+    <meta name = "description" content = "Startsida">
 </head>
+
 <body>
-    
-</body>
-</html>
 
+        <nav aria-label = "Huvudmeny">
+        <ul>
+            <li><a href = "index.html">Startsida</a></li>
+            <li><a href = "bildredigering.html">Bildredigering</a></li>
+            <li><a href = "om-mig.html">Om mig</a></li>
+        </ul>
+    </nav>
 
-<main class="container flow">
+    <main class="container flow">
 <h1>Redigerade bilder med original</h1>
 
-
-<!-- Exempel 1: Borttaget objekt (krav) -->
+<!-- Exempel 1: Ljusbalans/färgkorrigering -->
 <article class="edit-block flow">
-<h2>Bild 1 – Borttaget objekt</h2>
+<h2>Bild 1 – Ljus & färg</h2>
 <div class="compare">
 <figure>
-<img src="assets/series/original/bildserie001.jpeg" alt="Original, bild 1" />
+<img src="Assets/Bilder/bilserie001.jpg" alt = "Original, bild 1" width = "145" height = "145">
 <figcaption>Original</figcaption>
 </figure>
+
 <figure>
-<img src="assets/series/bildserie001.jpeg" alt="Redigerad, bild 1" />
+<img src= "" alt="Redigerad, bild 1">
 <figcaption>Redigerad</figcaption>
 </figure>
 </div>
-<p>
-<strong>Vad jag gjort:</strong> Tog bort oönskat objekt (t.ex. en soptunna) med
-Innehållsanpassad fyllning/Klona. Justerade vitbalans, ökade kontrast och
-tonkurva för en jämn look. Lätt beskärning till 3:2.
-</p>
-</article>
 
-
-<!-- Exempel 2: Färgläggning/byte av färg (krav) -->
-<article class="edit-block flow">
-<h2>Bild 2 – Färgläggning / Bytt färg</h2>
-<div class="compare slider" data-divider="0.5">
-<img src="assets/series/original/bildserie002.jpeg" alt="Original, bild 2" class="slider__img slider__img--left" />
-<img src="assets/series/bildserie002.jpeg" alt="Redigerad, bild 2" class="slider__img slider__img--right" />
-<input class="slider__input" type="range" min="0" max="100" value="50" aria-label="Dra för att jämföra före/efter" />
-</div>
 <p>
 <strong>Vad jag gjort:</strong> Maskade tröjan och bytte färg från blå till röd
 via HSL/Selektiv färg. Finjusterade mättnad och skuggor. Matchade serien med
 en varm toning (LUT/Color Balance) och enhetlig korn.
 </p>
+
 </article>
 
 
-<!-- Exempel 3: Ljusbalans/färgkorrigering -->
+<!-- Exempel 2: Borttaget objekt (krav) -->
 <article class="edit-block flow">
-<h2>Bild 3 – Ljus & färg</h2>
+
+<h2>Bild 2 – Borttaget objekt</h2>
+<div>
+<img src="Assets/Bilder/bilserie002.jpg" alt="Original, bild 2" width = "145" height = "145">
+<img src="" alt="Redigerad, bild 2" width = "145" height = "145">
+</div>
+
+<p>
+<strong>Vad jag gjort:</strong> Tog bort oönskat objekt med
+Innehållsanpassad fyllning/Klona. Justerade vitbalans, ökade kontrast och
+tonkurva för en jämn look. Lätt beskärning till 3:2.
+</p>
+</article>
+
+<!-- Exempel 3: Färgläggning/byte av färg (krav) -->
+<article class="edit-block flow">
+<h2>Bild 3 Färgläggning / Bytt färg</h2>
 <div class="compare">
 <figure>
-<img src="assets/series/original/bildserie003.jpeg" alt="Original, bild 3" />
+<img src="Assets/Bilder/bilserie003.jpg" alt="Original, bild 3" width = "145" height="145">
 <figcaption>Original</figcaption>
 </figure>
+
 <figure>
-<img src="assets/series/bildserie003.jpeg" alt="Redigerad, bild 3" />
+<img src="" alt="Redigerad, bild 3" />
 <figcaption>Redigerad</figcaption>
 </figure>
 </div>
+
 <p>
 <strong>Vad jag gjort:</strong> Exponering +0.25, skuggor upp, högdagrar ner, vitbalans
 mot neutral grå. Lätt vinjettering och beskärning. Samma färgprofil som övriga bilder.
 </p>
 
-
-<p class="note">Tips: Max en bild får vara svartvit. Om du väljer det, färglägg ett objekt i bilden.</p>
 </article>
 </main>
 
 
 <footer class="site-footer">
-<p>© <span id="year"></span> Ditt Namn</p>
+<p>© <span id="year"></span> Francisco De Leon Gonzalez</p>
 </footer>
 
-
-<script src="script.js"></script>
 </body>
 </html>

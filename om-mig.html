@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
-    
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Om mig</title>
-<meta name="description" content="Kort presentation och frilagd porträttbild." />
-<link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8"> <!-- Stöd för svenska tecken -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör sidan responsiv för mobila enheter-->
+    <title>Uppgift 1.2</title> <!-- Sidtitel -->
+    <link rel = "stylesheet" href = "styles.css"> <!-- Länkar till min CSS-fil -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes = "16x16">
+    <img src = "Assets/logo.jpg" alt = "logo" width = "40" height="45">
+    <meta name = "description" content = "Startsida"> 
 </head>
+
 <body>
-<header class="site-header">
-<a class="brand" href="index.html" aria-label="Startsida">
-<img src="assets/logo.svg" alt="Logotyp" width="120" height="40" />
-</a>
-<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Öppna meny">☰</button>
-<nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
-<a href="index.html">Start</a>
-<a href="bildredigering.html">Bildredigering</a>
-<a href="om-mig.html" aria-current="page">Om mig</a>
-</nav>
-</header>
+
+    <nav aria-label = "Huvudmeny">
+        <ul>
+            <li><a href = "index.html">Startsida</a></li>
+            <li><a href = "bildredigering.html">Bildredigering</a></li>
+            <li><a href = "om-mig.html">Om mig</a></li>
+        </ul>
+    </nav>
 
 
 <main class="container flow">
-<h1>Hej! Jag heter <span class="highlight">Ditt Namn</span></h1>
+<h1>Hej! Jag heter <span class="highlight">Francisco Mauricio De Leon</span></h1>
 <div class="about">
-<img class="portrait" src="assets/portrait.png" alt="Frilagd porträttbild" />
-<div class="about__text flow">
+<img class="portrait" src="Assets/Bilder/Profilbild frilagd.png" alt="Frilagd porträttbild">
+
 <p>
-Jag är [din roll/student] med intresse för foto, färgkorrigering och visuellt uttryck.
+Jag är student med intresse för Webbutveckling.
 På den här sidan delar jag en sammanhållen bildserie där jag arbetat med ljusbalans,
 färgprofiler, beskärning, borttag av objekt och selektiv färgläggning.
 </p>
-<p>
-Tekniker jag ofta använder: Tonkurva, HSL/Color Mixer, Selektiv färg, LUTs,
-lokala justeringar (radial/gradientmasker) och innehållsanpassad fyllning.
-</p>
-</div>
+
 </div>
 </main>
 
 
 <footer class="site-footer">
-<p>© <span id="year"></span> Ditt Namn</p>
+<p>© <span id="year">2025</span> Francisco De Leon</p>
 </footer>
 
-
-<script src="script.js"></script>
 </body>
 </html>

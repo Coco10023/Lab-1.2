@@ -28,6 +28,12 @@ html,body {
     width:100%;height:auto;display:block;opacity:0.85
 }
 
+.full-img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px; /* Bilden får aldrig bli större än originalet */
+}
+
 
 /* Nav */
 .nav {  

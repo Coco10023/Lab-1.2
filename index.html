@@ -37,71 +37,76 @@
 
 
     <section class="grid-gallery" aria-label="Bildserie">
-        <h2>Bildserie</h2>
+        <h2>Redigerade bilder och original</h2>
 
-    <div class="grid">
+        <!-- Exempel 1: Ljusbalans/kontrastkorrigering -->
+        <article class="edit-block flow">
+            <h2>Bild 1 – Ljus & kontrast</h2>
 
-        <figure class="card">
-            <img src="Assets/Bilder/bildserie001.png" alt="Bild 1 i serien" class="full-img">
-            <figcaption>Bild 1</figcaption>
-        </figure>
+                <div class="compare">
+                    <figure>
+                        <img src="Assets/Bilder/bildserie001.png" alt = "Original, bild 1" class="full-img">
+                        <figcaption>Original</figcaption>
+                    </figure>
 
-        <figure class="card">
-            <img src="Assets/Bilder/bildserie002.png" alt="Bild 2 i serien" class="full-img">
-            <figcaption>Bild 2</figcaption>
-        </figure>
+                    <figure>
+                        <img src= "Assets/Bilder/bildserie001 - redigerad.png" alt="Redigerad, bild 1" class="full-img">
+                        <figcaption>Redigerad</figcaption>
+                    </figure>
+    
+                    <p>
+                        <strong>Vad jag gjort:</strong> Jag justerade ljusstyrkan och kontrasten via programmet Photopea. 
+                    </p>
 
-        <figure class="card">
-            <img src="Assets/Bilder/bildserie003.png" alt= "Bild 3 i serien" class="full-img">
-            <figcaption>Bild 3</figcaption>
-        </figure>
+        </article>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie004.png" alt = "Bild 4 i serien" class="full-img">
-            <figcaption>Bild 4</figcaption>
-        </figure>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie005.png" alt = "Bild 5 i serien" class="full-img">
-            <figcaption>Bild 5</figcaption>
-        </figure>
+    <!-- Exempel 2: Borttaget objekt -->
+        <article class="edit-block flow">
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie006.png" alt = "Bild 6 i serien" class="full-img">
-            <figcaption>Bild 6</figcaption>
-        </figure>
+            <h2>Bild 2 – Borttaget objekt</h2>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie007.png" alt = "Bild 7 i serien" class="full-img">
-            <figcaption>Bild 7</figcaption>
-        </figure>
+                <figure>
+                    <img src="Assets/Bilder/bildserie002.png" alt="Original, bild 2" class="full-img">
+                    <figcaption>Original</figcaption>
+                </figure>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie008.png" alt = "Bild 8 i serien" class="full-img">
-            <figcaption>Bild 8</figcaption>
-        </figure>
+                <figure>
+                    <img src="Assets/Bilder/bildserie002 - redigerad.png" alt="Redigerad, bild 2" class="full-img">
+                    <figcaption>Redigerad</figcaption>
+                </figure>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie009.png" alt = "Bild 9 i serien" class="full-img">
-            <figcaption>Bild 9</figcaption>
-        </figure>
+                <p>
+                    <strong>Vad jag gjort:</strong> Använder Photopea för att ta bort halva huvuvet genom att använda Lasso Tool som markerar
+                    det onönskade objektet. Sedan gå till edit, fill och välja alternativet Content Aware som gör att programmet automatisk fyller området 
+                    med en bakgrund som kan passa dess omgivning. Använder också Healing Brush för finjustering då det blir konstiga märken/streck efter att man
+                    tar bort det oönskade föremålet. 
+                </p>
+        </article>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie010.png" alt = "Bild 10 i serien" class="full-img">
-            <figcaption>Bild 10</figcaption>
-        </figure>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie011.png" alt = "Bild 11 i serien" class="full-img">
-            <figcaption>Bild 11</figcaption>
-        </figure>
+    <!-- Exempel 3: Färgläggning/byte av färg (krav) -->
+        <article class="edit-block flow">
+            <h2>Bild 3 Färgläggning / Bytt färg</h2>
 
-        <figure class = "card">
-            <img src = "Assets/Bilder/bildserie012.png" alt = "Bild 12 i serien" class="full-img">
-            <figcaption>Bild 12</figcaption>
-        </figure>
+                <figure>
+                    <img src="Assets/Bilder/bildserie005.png" alt="Original, bild 3" class="full-img">
+                    <figcaption>Original</figcaption>
+                </figure>
 
-    </div>
+                <figure>
+                    <img src="Assets/Bilder/bildserie005-redigerad.png" alt="Redigerad, bild 3" class="full-img">
+                    <figcaption>Redigerad</figcaption>
+                </figure>
+
+            <p>
+                <strong>Vad jag gjort:</strong> Jag har ändrat färgen på ögat för att matcha färgen på vänstra ögat så mycket som möjligt. Jag kontrollerade vad färgen var med hjälp av eyedropper och matchade sedan färg inställningarna på högra ögat genom 
+                att markera med lasso tool och skapa en ny layer. Efter att jag skapat en ny layer justerade jag hue och saturation samt la till glans med verktygen dodge tool och burn tool.
+            </p>
+
+        </article>
+            </div>
+
     </section>
 </main>
 

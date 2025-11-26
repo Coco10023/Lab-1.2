@@ -64,13 +64,14 @@ html,body {
     border-radius:.5rem;
 }
 
-.nav-link [aria-current="page"],
-
-.nav-link:focus, .nav-link:hover {
-    background:rgba(255,255,255,0.04);outline: none;
+.nav-link[aria-current="page"],
+.nav-link:focus, 
+.nav-link:hover {
+    background:rgba(255,255,255,0.04);
+    outline: none;
 }
 
-.main {
+main {
     padding:var(--space);
 }
 

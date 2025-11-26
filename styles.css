@@ -37,21 +37,28 @@ html,body {
 
 /* Nav */
 .nav {  
-    list-style:none;padding:0;margin:0;display:flex;gap:1rem
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    gap:1rem;
 }
 
 .nav-link {
-    color:var(--text);text-decoration:none;padding:.35rem .6rem;border-radius:.5rem
+    color:var(--text);
+    text-decoration:none;
+    padding:.35rem .6rem;
+    border-radius:.5rem;
 }
 
 .nav-link [aria-current="page"], 
 
 .nav-link:focus, .nav-link:hover {
-    background:rgba(255,255,255,0.04);outline:none
+    background:rgba(255,255,255,0.04);outline: none;
 }
 
 .main {
-    padding:var(--space)
+    padding:var(--space);
 }
 
 
